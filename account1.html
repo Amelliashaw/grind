@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script defer src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+    <!-- <link rel=“icon” href="img/Trustee-Logo.png"> -->
+    <link rel="icon" href="https://thsbonline.com/storage/2023/01/Trustee-Logo.png" sizes="192x192" />
+
+    <title>Trustee Home Savings Bank - Trustee Home Savings Bank</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://thsbonline.com/storage/2023/01/Trustee-Logo.png" alt="logo">
+                <!-- <img fetchpriority="high" width="150" height="249" src="https://thsbonline.com/storage/2023/01/Trustee-Logo.png" class="attachment-large size-large wp-image-5837" alt="" srcset="https://thsbonline.com/storage/2023/01/Trustee-Logo.png 250w, https://thsbonline.com/storage/2023/01/Trustee-Logo-150x150.png 150w" sizes="(max-width: 250px) 100vw, 250px" > -->
+                <h1>TRUSTEE HOME SAVINGS BANK</h1>
+            </div>
+            <!-- <ul>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#about">Transaction & Payment</a></li>
+                <li><a href="#contacts">Offshore Deposits</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li ><a href="userlogin.html" class="logout">LOGOUT</a></li>
+            </ul> -->
+            <ul>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#about">Transaction & Payment</a></li>
+                <li><a href="#contacts">Offshore Deposits</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li>
+                    <button class="logout" onclick="logout()">LOGOUT</button>
+                </li>
+            </ul>
+            <box-icon name='menu' color="whitesmoke" size="lg" id="menu"></box-icon>
+            <script>
+                // Function to handle logout
+                function logout() {
+                    // Redirect to userlogin.html
+                    window.location.href = 'userlogin.html';
+                }
+            
+                // Function to handle session timeout
+                function startSessionTimer() {
+                    setTimeout(() => {
+                        alert("Your session has expired. Please log in again.");
+                        logout(); // Call the logout function after 5 minutes
+                    }, 300000); // 300000 milliseconds = 5 minutes
+                }
+            
+                // Start the session timer when the page loads
+                window.onload = startSessionTimer;
+            </script>
+        </nav>
+
+        <!-- <div class="header-content">
+            <div>
+                <h1>Accounts</h1>
+                <p>Hello <span>NAME</span>, Welcome back!</p>
+            </div> -->
+
+            
+  <!-- NEW ADDED CODE               -->
+            <div class="container" id="account">
+                <aside class="sidebar">
+                    <div class="balances">
+
+
+                        <div class="account-card">
+                            <img src="/img/ben.jpg" alt="profileimg">
+                            <!-- <h3>Loans</h3> -->
+                            <span>Benjamin Graham</span>
+                        </div>
+                        <div class="account-card">
+                            <h3>Deposit Accounts</h3>
+                            <p>$83,180,191.51</p>
+                        </div>
+
+                    </div>
+                </aside>
+        
+                <main>
+                    <div class="accounts-header">
+                        <h1>Accounts</h1>
+                        <p>Hello Customer, welcome back!</p>
+                    </div>
+            
+                    <div class="accounts-list">
+                        <div class="account-card">
+                            <div class="account-details">
+                                <h3>Flexible Savings</h3>
+                                <p>$3,151,194.25</p>
+                            </div>
+                            <small>Public Funds Now</small>
+                            <span>•••</span>
+                        </div>
+            
+                        <div class="account-card">
+                            <div class="account-details">
+                                <h3>Fixed Savings</h3>
+                                <p>$80,029,621.60</p>
+                            </div>
+                            <small>Book Balance</small>
+                            <span>•••</span>
+                        </div>
+
+                        <!-- <div class="account-card">
+                            <div class="account-details">
+                                <h3>Minor Savings</h3>
+                                <p>$5,621.60</p>
+                            </div>
+                            <small>Book Balance</small>
+                            <span>•••</span>
+                        </div> -->
+
+            
+                        <!-- Add more account cards similarly -->
+                    </div>
+                </main>
+        
+                <aside class="stats">
+                    <h3>Transaction History</h3>
+
+                    <div class="total-balance">
+                        Standing Order from H..
+                    </div>
+                    <div class="total-balance">
+                        Fixed Deposite from off..
+                    </div>
+                    <div class="total-balance">
+                        Aircraft Bill of Sale from..
+                    </div>
+                    <div class="total-balance">
+                        Two Sigma Hedge Fund..
+                    </div>
+            
+                    <!-- <div class="breakdown">
+                        <p>Deposit Accounts (7)</p>
+                        <p>86% <span>$18,191.51</span></p>
+                        <p>Loans (3)</p>
+                        <p>14% <span>$3,000.00</span></p>
+                    </div> -->
+
+                    <div id="content">
+                        <!-- Content to be loaded goes here -->
+                    </div>
+
+                    <div class="promo">
+                        <button id="loadMore">Load more...</button>
+                    </div>
+
+                    <script>
+                        document.getElementById('loadMore').addEventListener('click', function() {
+                            // Change button text to "Loading"
+                            this.textContent = 'Loading';
+                            this.classList.add('loading'); // Optional: Change button style
+                    
+                                                // Change button text after clicking
+                            this.textContent = 'New region detected, please contact us...';
+                            this.classList.add('clicked'); // Optional: Change button style
+
+                            // Simulate loading more content
+                            setTimeout(() => {
+                                // Here you would normally load more content
+                                // For demonstration, we'll just add a new item
+                                const newContent = document.createElement('div');
+                                newContent.textContent = 'New region detected, please contact us…';
+                                // document.getElementById('content').appendChild(newContent);
+                    
+                                // Reset button text after loading
+                                this.textContent = 'Load More';
+                                this.classList.remove('loading');
+                            }, 2000); // Simulate a 2-second loading time
+                        });
+                    </script>
+                </aside>
+            </div>
+              
+
+            <!-- <form>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email" >
+                <input type="submit" value="Subscribe">
+            </form> -->
+        </div>
+    </header>
+
+
+    <!-- ABOUT -->
+    <!-- <section class="about" id="about">
+        <div class="row">
+            <div class="about-left">
+                <h2>Fintech is all about excellence in the world of business</h2>
+                <img src="img/jdb1.png" alt="">
+            </div>
+            <div class="history">
+                <h2>Our History</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis quis omnis, cum culpa nisi!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis quis omnis, cum culpa nisi!</p>
+                <input type="submit" value="READ MORE">
+            </div>
+            <div class="vision">
+                <h2>Vision & Mission</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis quis omnis, cum culpa nisi!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum officiis quis omnis, cum culpa nisi!</p>
+                <input type="submit" value="READ MORE">
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- ABOUT 2 -->
+    <!-- <section class="about2">
+        <div class="row">
+            <div class="about-left">
+                <h2>what we can do for you</h2>
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, aliquid?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse quisquam, est, saepe molestias aut deleniti dicta et enim consequatur explicabo at nulla reiciendis corporis culpa minus nam alias, id repellat dolores quod!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, odit?</p>
+            </div>
+
+            <div class="about-right">
+                <div class="row">
+                    <div class="card">
+                        <box-icon type="logo" name="apple" color="#4CAF50" size="60px"></box-icon>
+                        <h2>IOS Development</h2>
+                    </div>
+                    <div class="card">
+                        <box-icon type="logo" name="android" color="#4CAF50" size="60px"></box-icon>
+                        <h2>Andriod Development</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <box-icon  name="data" color="#4CAF50" size="60px"></box-icon>
+                        <h2>Database Management</h2>
+                    </div>
+                    <div class="card">
+                        <box-icon  name="line-chart-down" color="#4CAF50" size="60px"></box-icon>
+                        <h2>Data Visualizations</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- PROCESS -->
+    <section class="process">
+        <h1> Alert !!!</h1>
+        <div class="progress-bar">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+        <div class="row">
+            <!-- <div class="box1">
+                <h2>One</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, iure saepe. Ducimus quae tempore enim alias, esse rem assumenda impedit!</P>
+                
+            </div>
+            <div class="box2">
+                <h2>Two</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, iure saepe. Ducimus quae tempore enim alias, esse rem assumenda impedit!</P>
+                
+            </div>
+            <div class="box3">
+                <h2>Three</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, iure saepe. Ducimus quae tempore enim alias, esse rem assumenda impedit!</P>
+                
+            </div> -->
+            <div class="box1">
+                <h2>Step 1: <br> Notification</h2>
+                <p>Upon detecting a new region, you will receive a notification alerting you of the change. This notification will include details about the new region and any required actions.</p>
+            </div>
+            <div class="box2">
+                <h2>Step 2: <br>Verification Documents</h2>
+                <p>You will need to submit specific verification documents to confirm your identity and the legitimacy of the offshore account. This may include a government-issued ID, proof of address, and any additional documentation required for the new region.</p>
+            </div>
+            <div class="box3">
+                <h2>Step 3: <br>Confirmation</h2>
+                <p>After submitting your documents, you will receive a confirmation once your account has been successfully verified for the new region. This process may take several business days, depending on the review time.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- TESTIMONY -->
+    <section class="testimony">
+        <div class="row">
+            <div class="tcard">
+                <!-- <img src="img" alt="" > -->
+                <p>I had an exceptional experience with this offshore bank. The process was seamless, and the customer service was outstanding. They provided clear guidance throughout the setup, ensuring I understood every step. The online platform is user-friendly, making it easy to manage my finances from anywhere in the world. Highly recommend!</p>
+                <h2>Aziel  Thron </h2>
+                <div class="icons">
+                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>
+                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>
+                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>
+                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>
+                    <box-icon name='star-half' type='solid' color='whitesmoke'></box-icon>
+                </div>
+            </div>
+            <div class="tcard">
+                <!-- <img src="img" alt=""> -->
+                <p>This offshore bank has exceeded my expectations. The security features give me peace of mind, and I appreciate the transparency in fees and services. The account setup was quick, and I was impressed with the efficiency of their team. I’ve been able to diversify my investments thanks to their excellent financial advice. Truly a five-star experience!</p>
+                <h2>Lora Rodriguez</h2>
+                <div class="icons">
+                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>
+                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>
+                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>
+                    <box-icon name='star' type='solid' color='whitesmoke'></box-icon>
+                    <box-icon name='star-half' type='solid' color='whitesmoke'></box-icon>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="contact" id="contacts">
+        <h1>Contact Us</h1>
+        <div class="form">
+            <!-- <input type="text" placeholder="Enter your name" id="" required>
+            <input type="email" placeholder="Enter your email" id="" required>
+            <textarea placeholder="Enter your message" id=""  required></textarea>
+            <input type="button" value="SEND">
+        </div> -->
+            <input type="text" placeholder="Enter your name" id="name" required>
+            <input type="email" placeholder="Enter your email" id="email" required>
+            <textarea placeholder="Enter your message" id="message" required></textarea>
+            <input type="button" value="SEND" id="sendButton">
+        </div>
+        <div class="message" id="responseMessage"></div>
+
+        <script>
+            document.getElementById('sendButton').addEventListener('click', function() {
+                // Get input values
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+        
+                // Check if all fields are filled
+                if (name === '' || email === '' || message === '') {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+        
+                // Simulate form submission (e.g., sending to a server)
+                // Here, you can add your own AJAX call or form submission logic
+        
+                // Display success message
+                document.getElementById('responseMessage').textContent = 'Your message has been sent and is being reviewed.';
+                
+                // Optionally, clear the form fields after submission
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            });
+        </script>
+        
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Powered and Designed By Trustee Home Savings Bank
+            <br>
+            All Rights Reserved © </p>
+    </footer>
+</body>
+</html>
