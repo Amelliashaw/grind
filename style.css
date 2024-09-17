@@ -314,6 +314,8 @@ nav box-icon{
     header {
         height: 100vh;
         overflow: scroll;
+        scroll-behavior: smooth;
+
 
     }
 
