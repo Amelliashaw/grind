@@ -195,6 +195,12 @@ function jltmaNS(n){for(var e=n.split("."),a=window,i="",r=e.length,t=0;r>t;t++)
 
 
 				<script>
+					// Function to handle logout
+					function logout() {
+						// Redirect to userlogin.html
+						window.location.href = 'userlogin.html';
+					}
+				
 					// Function to handle session timeout
 					function startSessionTimer() {
 						setTimeout(() => {
@@ -206,6 +212,7 @@ function jltmaNS(n){for(var e=n.split("."),a=window,i="",r=e.length,t=0;r>t;t++)
 					// Start the session timer when the page loads
 					window.onload = startSessionTimer;
 				</script>
+
 	
 
 
