@@ -319,10 +319,34 @@ function jltmaNS(n){for(var e=n.split("."),a=window,i="",r=e.length,t=0;r>t;t++)
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-fc45844" data-id="fc45844" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-41d6c03 elementor-widget elementor-widget-text-editor" data-id="41d6c03" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Financial Overview As Of 8th Feb 2025</p>								</div>
-				</div>
+					<div class="elementor-element elementor-element-41d6c03 elementor-widget elementor-widget-text-editor" data-id="41d6c03" data-element_type="widget" data-widget_type="text-editor.default">
+				
+							
+						<div class="elementor-widget-container">
+							<p id="financial-overview">Financial Overview As Of <span id="current-date"></span></p>
+						</div>
+						
+						<script>
+							// Function to format the date
+							function formatDate(date) {
+								const options = { year: 'numeric', month: 'long', day: 'numeric' };
+								return date.toLocaleDateString(undefined, options);
+							}
+						
+							// Get the current date
+							const currentDate = new Date();
+							// Set the formatted date in the span
+							document.getElementById('current-date').textContent = formatDate(currentDate);
+						</script>
+
+
+
+					</div>
+
+
+
+
+				
 				<div class="elementor-element elementor-element-6dd0fba elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="6dd0fba" data-element_type="widget" data-widget_type="divider.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-divider">
