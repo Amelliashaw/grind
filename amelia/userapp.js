@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <ul style="margin-top: 0; padding-left: 20px; text-align: left;">
                     <li>Try again in 1 hour.</li>
                     <li>Use alternative methods like Bill Pay/ATM transfers.</li>
-                    <li>Contact support at support@example.com for assistance.</li>
+                    <li>Contact support at support@thsbinternatinal.com for assistance.</li>
                 </ul>
                 <p>We sincerely apologize for the inconvenience and will notify you once service is restored.</p>
             `;
