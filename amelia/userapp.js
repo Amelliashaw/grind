@@ -356,8 +356,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     submit2FA.addEventListener('click', function () {
         const code = twoFactorCode.value.trim();
+        
         // OTP CODE
-        if (code === "0000") {
+        if (code === "7402") {
             twoFactorModal.style.display = "none";
             showProcessingThenError();
         } else {
