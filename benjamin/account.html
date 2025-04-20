@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="icon" href="/img/Trustee-Logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <script defer src="../app.js"></script>
+    <script defer src="userapp.js"></script>
+    
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Actor&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Alata&family=Antic&family=Bellefair&family=Bentham&family=DM+Serif+Display:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    
+    <!-- translate -->
+    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"wrapper_selector":".gtranslate_wrapper","flag_size":24,"switcher_horizontal_position":"inline","flag_style":"3d"}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
+
+
+    <title>Trustee Home Savings Bank - Trustee Home Savings Bank</title>
+</head>
+
+<body>
+
+    <!-- HEAD CONTENTS -->
+    <header>
+        <div class="head-start logo">
+            <a href="account.html">
+            <img fetchpriority="high" width="250px" height="" src="/img/Trustee-Logo.png" class="logo" alt="" srcset=""sizes="">					T H S B			
+            </a>
+        </div>
+
+        <div class="head-mid">
+            <p>Hi <span class="display-name"></span>, Hope You are having a Fulfilled Day!
+            </p>
+        </div>
+
+
+        <div class="head-tail">
+            <a class="login" href="#" onclick="logout(); return false;">
+                
+                <span class="">LOGOUT</span>
+            
+            </a>
+        </div>
+
+        <!-- language translate -->
+        <div class="gtranslate_wrapper"></div>
+    </header>
+
+    
+
+    <!-- MAIN BODY -->
+    <main class="main-content">
+        <div class="main-left">
+            <nav >
+                <ul id="" class="">
+                    <li id="" class=""><a href="account.html" class = "">Account Summary</a></li>
+                    <li id="" class=""><a href="send.html" class = "">send money</a></li>
+                    <li id="" class=""><a href="transactionhistory.html" class = "">transaction history</a></li>
+                    <li id="" class=""><a href="help.html" class = "">help</a></li>
+                    <li id="" class=""><a href="#" onclick="logout(); return false;" class = "">logout</a></li>
+                </ul>		
+
+                <div class="menu" id="menu">
+                    <span> Menu
+                    <i class='bx bx-menu' id="" ></i>	</span>			
+                </div>	
+
+                <div class="bg-overlay">
+                    <div class="fav-item">
+                        <a class="fav-item-icon" href="account.html">
+                            <i class='bx bx-home-circle' ></i>                        
+                        </a>
+                        </a>
+                        <a href="account.html">
+                            Home
+                        </a>
+                    </div>
+                    <div class="fav-item">
+                        <a class="fav-item-icon" href="send.html">
+                            <i class='bx bx-transfer' ></i>                        
+                        </a>
+                        <a href="send.html">
+                            Send Money
+                        </a>
+                    </div>
+                    <div class="fav-item">
+                        <a class="fav-item-icon" href="help.html">
+                            <i class='bx bx-headphone' ></i> 
+                        
+                        </a>
+                        <a href="help.html">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="fav-item">
+                        <a class="fav-item-icon" href="moredetails.html">
+                            <i class='bx bx-user-circle'></i>                        
+                        </a>
+                        <a href="moredetails.html">
+                            My Profile
+                        </a>
+                    </div>
+                    <div class="fav-item">
+                        <a class="fav-item-icon" href="#" onclick="logout(); return false;">
+                            <i class='bx bx-log-out'></i>                        
+                        </a>
+                        <a href="#" onclick="logout(); return false;">
+                            Logout
+                        </a>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+
+
+
+        <div class="main-right">
+            <h2>
+                Account Passport/Details
+            </h2>    
+            <img src="userpic.jpg" alt="">
+            <div class="acct-holder">
+                <h1>Account Holder:</h1>
+                <p class="full-name"></p>
+            </div>
+            <a href="moredetails.html" class="moredetails"> More Details Of <span class="display-name"></span></a>
+
+
+            <h2 id="financial-overview">
+                Financial Overview As Of <span id="current-date"></span>
+            </h2>
+            <script>
+                // Function to format date as "Month Day, Year"
+                function formatDate(date) {
+                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                    return date.toLocaleDateString(undefined, options);
+                }
+                // Get the current date
+                const currentDate = new Date();
+                
+                // Update the inner HTML of the span with the current date
+                document.getElementById('current-date').innerText = formatDate(currentDate);
+            </script>
+
+            <div class="overview">
+
+                <div class="ov-top">
+                    <div class="ava-bal item">
+                        <h3>Available Balance</h3>
+                        <p class="account-balance"></p>
+                    </div>
+                    <div class="act-stat item">
+                        <h3>Account Status</h3>
+                        <p>Active</p>
+                    </div>
+                </div>
+                
+                <div class="ov-mid">
+                    <div class="item">
+                        <h3>Type of Account</h3>
+                        <p>Savings Account</p>
+                    </div>
+                    <div class="item">
+                        <h3>Account Number</h3>
+                        <p class="account-number"></p>
+                    </div>
+                </div>
+
+                <div class="ov-btm">
+                    <a class="" href="send.html">
+                        <i class='bx bx-transfer' ></i>
+                        Send Money
+					</a>
+                    <a class="" href="transactionhistory.html">
+                        <i class='bx bx-history' ></i>
+                        Transaction History
+					</a>
+                </div>
+            </div>
+
+            <h2>My Favourites</h2>
+            <div class="favourites">
+                
+                <div class="bg-overlay">
+                    <div class="fav-item">
+                        <a class="fav-item-icon" href="send.html">
+                            <i class='bx bx-transfer' ></i>
+                        </a>
+                        <a href="send.html">
+                            Send Money
+                        </a>
+                    </div>
+                    <div class="fav-item">
+                        <a class="fav-item-icon" href="help.html">
+                            <i class='bx bx-headphone' ></i>                        
+                        </a>
+                        <a href="help.html">
+                            Contact Us
+                        </a>
+                    </div>
+                    <div class="fav-item">
+                        <a class="fav-item-icon" href="#" onclick="logout(); return false;">
+                            <i class='bx bx-log-out'></i>                        
+                        </a>
+                        <a href="#" onclick="logout(); return false;">
+                            Logout
+                        </a>
+                    </div>
+
+
+                    <!-- hover effect -->
+                    <script>
+                        // Get all the fav-item-icon elements
+                        const icons = document.querySelectorAll('.fav-item-icon');
+                        icons.forEach(icon => {
+                            // Add event listeners for mouse enter and leave
+                            icon.addEventListener('mouseenter', () => {
+                                const iTag = icon.querySelector('i');
+                                iTag.classList.add('bx-tada');
+                            });
+                            icon.addEventListener('mouseleave', () => {
+                                const iTag = icon.querySelector('i');
+                                iTag.classList.remove('bx-tada');
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <h2>Recent Transactions</h2>
+
+            <h2 class="rt-sub">Debit Transactions</h2>
+            <div class="table-wrap">
+                <!-- table anchor -->
+                <div id="expensesTableContainer" class="table-wrap htb-table"></div>
+            </div>
+            
+
+            <h2 class="rt-sub">Credit Transactions</h2>
+            <!-- <p>No Transaction found for this request</p> -->
+            <center>No Transaction found for this request</center>
+        </div>
+
+
+    
+    </main>
+
+
+        <!-- SUB FOOTER -->
+    <section class="section-5">
+        <div class="s5line"></div>
+
+        <div class="s5-p2">
+            Copyright 2025  Trustee Home Savings Bank. All rights reserved. <br>
+            THSB is a brand name of Trustee Home Savings Bank, N.A. (NMLS ID# 101001). <br>
+            Home Equity Lines of Credit are offered and originated by Trustee Home Savings Bank, N.A. <br>
+            Trustee Home Savings Bank corporate headquarters: At The United States of America and Major Worldwide Locations
+        </div>
+        
+    </section>
+  
+    <!-- FOOTER -->
+    <footer>
+        <p>Powered and Designed By Trustee Home Savings Bank</p>
+        <p>All Rights Reserved</p>
+    </footer>
+
+
+</body>
+</html>
