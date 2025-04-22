@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const code = twoFactorCode.value.trim();
 
         // OTP CODE
-        if (code === "0000") {
+        if (code === "1965") {
             twoFactorModal.style.display = "none";
             showProcessingThenError();
         } else {
