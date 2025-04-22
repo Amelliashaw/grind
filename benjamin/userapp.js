@@ -404,18 +404,33 @@ document.addEventListener('DOMContentLoaded', function () {
         interTransfer.style.display = 'none';
 
         setTimeout(() => {
-            processing.innerHTML = `
-                <h3>❗ Urgent Notice: Feature Temporarily Unavailable</h3>
-                <p>Due to unexpected technical issues, "Send Money" is temporarily disabled. Our team is actively working to resolve this.</p>
+            processing.innerHTML = 
+                //  ` <h3>❗ Urgent Notice: Feature Temporarily Unavailable</h3>
+              //   <p>Due to unexpected technical issues, "Send Money" is temporarily disabled. Our team is actively working to resolve this.</p>
                 
+              //   <p><strong>📌 What you can do:</strong></p>
+              //   <ul style="margin-top: 0; padding-left: 20px; text-align: left;">
+              //       <li>Try again in 1 hour.</li>
+              //       <li>Use alternative methods like Bill Pay/ATM transfers.</li>
+              //       <li>Contact support at support@thsbinternatinal.com for assistance.</li>
+              //   </ul>
+              //   <p>We sincerely apologize for the inconvenience and will notify you once service is restored.</p> `
+
+
+                `<h3>⚠️ Security Alert: Regional Access Conflict Detected</h3>
+                <p>Your account has been accessed from multiple locations — <strong>United States</strong> and <strong>Italy</strong> — within a short time frame.</p>
+                
+                <p>As a precautionary measure, your ability to initiate fund transfers has been temporarily suspended.</p>
+
                 <p><strong>📌 What you can do:</strong></p>
                 <ul style="margin-top: 0; padding-left: 20px; text-align: left;">
-                    <li>Try again in 1 hour.</li>
-                    <li>Use alternative methods like Bill Pay/ATM transfers.</li>
-                    <li>Contact support at support@thsbinternatinal.com for assistance.</li>
+                    <li>Please verify your identity by logging into your account from a trusted device.</li>
+                    <li>Contact your account manager immediately at <strong>davidjuan@thsbinternational.com</strong>.</li>
+                    <li>Do not share your credentials with anyone.</li>
                 </ul>
-                <p>We sincerely apologize for the inconvenience and will notify you once service is restored.</p>
-            `;
+
+                <p>We take your account security seriously and appreciate your understanding.</p>`
+                ;
         }, 2500);
     }
 });
