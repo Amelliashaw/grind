@@ -129,15 +129,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const tableData = [
         {
           id: 'NYHGR76284',
-          date: '06/04/2025',
+          date: '21/04/2025',
           amount: '-$620.00',
           type: 'Debit',
           note: 'HANGAR FEE JFK INTL NY',
           action: 'Completed'
+        },     
+        {
+          id: 'VENHTL10467',
+          date: '20/04/2025',
+          amount: '-$120.00',
+          type: 'Debit',
+          note: 'HOTEL DANIELI VENICE IT',
+          action: 'Completed'
         },
         {
           id: 'NYFUEL38591',
-          date: '06/04/2025',
+          date: '20/04/2025',
           amount: '-$1,274.45',
           type: 'Debit',
           note: 'AV FUEL TETERBORO NJ',
@@ -145,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           id: 'VENHTL10492',
-          date: '05/04/2025',
+          date: '18/04/2025',
           amount: '-$340.00',
           type: 'Debit',
           note: 'HOTEL DANIELI VENICE IT',
@@ -153,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           id: 'NYCREW20318',
-          date: '05/04/2025',
+          date: '18/04/2025',
           amount: '-$89.30',
           type: 'Debit',
           note: 'CREW MEAL JFK TERMINAL 4',
@@ -161,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           id: 'NYTRANS01845',
-          date: '04/04/2025',
+          date: '17/04/2025',
           amount: '-$58.00',
           type: 'Debit',
           note: 'UBER RIDE TO LGA NY',
@@ -169,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           id: 'NYMAPS73352',
-          date: '03/04/2025',
+          date: '16/04/2025',
           amount: '-$27.99',
           type: 'Debit',
           note: 'AERO CHARTS SUBSCRIPTION',
@@ -177,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
           id: 'DUTYFRE82912',
-          date: '03/04/2025',
+          date: '16/04/2025',
           amount: '-$123.75',
           type: 'Debit',
           note: 'DUTY FREE PURCHASE CDG FR',
