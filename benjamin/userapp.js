@@ -126,72 +126,96 @@ document.querySelectorAll('.acct-name-no').forEach(el => {
 
 // TABLE DETAILS EDIT
 document.addEventListener('DOMContentLoaded', () => {
-    const tableData = [
-        {
-          id: 'NYHGR76284',
-          date: '21/04/2025',
-          amount: '-$620.00',
-          type: 'Debit',
-          note: 'HANGAR FEE JFK INTL NY',
-          action: 'Completed'
-        },     
-        {
-          id: 'VENHTL10467',
-          date: '20/04/2025',
-          amount: '-$120.00',
-          type: 'Debit',
-          note: 'HOTEL DANIELI VENICE IT',
-          action: 'Completed'
-        },
-        {
-          id: 'NYFUEL38591',
-          date: '20/04/2025',
-          amount: '-$1,274.45',
-          type: 'Debit',
-          note: 'AV FUEL TETERBORO NJ',
-          action: 'Completed'
-        },
-        {
-          id: 'VENHTL10492',
-          date: '18/04/2025',
-          amount: '-$340.00',
-          type: 'Debit',
-          note: 'HOTEL DANIELI VENICE IT',
-          action: 'Completed'
-        },
-        {
-          id: 'NYCREW20318',
-          date: '18/04/2025',
-          amount: '-$89.30',
-          type: 'Debit',
-          note: 'CREW MEAL JFK TERMINAL 4',
-          action: 'Completed'
-        },
-        {
-          id: 'NYTRANS01845',
-          date: '17/04/2025',
-          amount: '-$58.00',
-          type: 'Debit',
-          note: 'UBER RIDE TO LGA NY',
-          action: 'Completed'
-        },
-        {
-          id: 'NYMAPS73352',
-          date: '16/04/2025',
-          amount: '-$27.99',
-          type: 'Debit',
-          note: 'AERO CHARTS SUBSCRIPTION',
-          action: 'Completed'
-        },
-        {
-          id: 'DUTYFRE82912',
-          date: '16/04/2025',
-          amount: '-$123.75',
-          type: 'Debit',
-          note: 'DUTY FREE PURCHASE CDG FR',
-          action: 'Completed'
-        }
-    ];
+            const tableData = [
+          {
+            id: 'SHJFUEL48261',
+            date: '18/10/2025', // yesterday
+            amount: '-$2,850.00',
+            type: 'Debit',
+            note: 'AVIATION FUEL - SHARJAH INTL',
+            action: 'Completed'
+          },
+          {
+            id: 'DXBFUEL39175',
+            date: '18/10/2025',
+            amount: '-$1,920.00',
+            type: 'Debit',
+            note: 'AVIATION FUEL - DUBAI INTL',
+            action: 'Completed'
+          },
+          {
+            id: 'SHJHAND48262',
+            date: '18/10/2025',
+            amount: '-$450.00',
+            type: 'Debit',
+            note: 'HANDLING FEE - SHARJAH INTL',
+            action: 'Completed'
+          },
+          {
+            id: 'DXBHAND39176',
+            date: '18/10/2025',
+            amount: '-$520.00',
+            type: 'Debit',
+            note: 'HANDLING FEE - AL MAKTOUM INTL',
+            action: 'Completed'
+          },
+          {
+            id: 'CONTRACT78421',
+            date: '18/10/2025',
+            amount: '+$12,500.00',
+            type: 'Credit',
+            note: 'CLIENT PAYMENT - SHJ/DXB TRANSFER',
+            action: 'Completed'
+          },
+          {
+            id: 'FBOFEE58329',
+            date: '18/10/2025',
+            amount: '-$320.00',
+            type: 'Debit',
+            note: 'FBO SERVICES - SHARJAH EXECUTIVE',
+            action: 'Completed'
+          },
+          {
+            id: 'CREWACCOM48263',
+            date: '17/10/2025',
+            amount: '-$280.00',
+            type: 'Debit',
+            note: 'CREW ACCOMMODATION - SHERATON SHARJAH',
+            action: 'Completed'
+          },
+          {
+            id: 'CREWMEAL39177',
+            date: '18/10/2025',
+            amount: '-$85.50',
+            type: 'Debit',
+            note: 'CREW MEAL - SHARJAH FBO LOUNGE',
+            action: 'Completed'
+          },
+          {
+            id: 'GROUNDTR48264',
+            date: '18/10/2025',
+            amount: '-$120.00',
+            type: 'Debit',
+            note: 'CREW TRANSPORT - SHARJAH TO DUBAI',
+            action: 'Completed'
+          },
+          {
+            id: 'NAVFEES58330',
+            date: '18/10/2025',
+            amount: '-$185.25',
+            type: 'Debit',
+            note: 'NAVIGATION FEES - UAE AIRSPACE',
+            action: 'Completed'
+          },
+          {
+            id: 'SUBSCRIPT39178',
+            date: '15/10/2025',
+            amount: '-$45.00',
+            type: 'Debit',
+            note: 'WEATHER SERVICE SUBSCRIPTION',
+            action: 'Completed'
+          }
+        ];
         
     const tableContainer = document.getElementById('expensesTableContainer');
   
