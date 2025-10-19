@@ -80,7 +80,7 @@ document.querySelectorAll('.full-name').forEach(el => {
     el.value = FullName; 
 });
 
-let Email = "flywithbengray@outlook.com";
+let Email = "grahamthagreat@gmail.com";
 document.querySelectorAll('.email').forEach(el => {
     el.textContent = Email;
     el.value = Email;
