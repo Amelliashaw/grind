@@ -126,95 +126,71 @@ document.querySelectorAll('.acct-name-no').forEach(el => {
 
 // TABLE DETAILS EDIT
 document.addEventListener('DOMContentLoaded', () => {
-            const tableData = [
-          {
-            id: 'SHJFUEL48261',
-            date: '18/10/2025', // yesterday
-            amount: '-$2,850.00',
-            type: 'Debit',
-            note: 'AVIATION FUEL - SHARJAH INTL',
-            action: 'Completed'
-          },
-          {
-            id: 'DXBFUEL39175',
-            date: '18/10/2025',
-            amount: '-$1,920.00',
-            type: 'Debit',
-            note: 'AVIATION FUEL - DUBAI INTL',
-            action: 'Completed'
-          },
-          {
-            id: 'SHJHAND48262',
-            date: '18/10/2025',
-            amount: '-$450.00',
-            type: 'Debit',
-            note: 'HANDLING FEE - SHARJAH INTL',
-            action: 'Completed'
-          },
-          {
-            id: 'DXBHAND39176',
-            date: '18/10/2025',
-            amount: '-$520.00',
-            type: 'Debit',
-            note: 'HANDLING FEE - AL MAKTOUM INTL',
-            action: 'Completed'
-          },
-          {
-            id: 'CONTRACT78421',
-            date: '18/10/2025',
-            amount: '+$12,500.00',
-            type: 'Credit',
-            note: 'CLIENT PAYMENT - SHJ/DXB TRANSFER',
-            action: 'Completed'
-          },
-          {
-            id: 'FBOFEE58329',
-            date: '18/10/2025',
-            amount: '-$320.00',
-            type: 'Debit',
-            note: 'FBO SERVICES - SHARJAH EXECUTIVE',
-            action: 'Completed'
-          },
-          {
-            id: 'CREWACCOM48263',
-            date: '17/10/2025',
-            amount: '-$280.00',
-            type: 'Debit',
-            note: 'CREW ACCOMMODATION - SHERATON SHARJAH',
-            action: 'Completed'
-          },
-          {
-            id: 'CREWMEAL39177',
-            date: '18/10/2025',
-            amount: '-$85.50',
-            type: 'Debit',
-            note: 'CREW MEAL - SHARJAH FBO LOUNGE',
-            action: 'Completed'
-          },
-          {
-            id: 'GROUNDTR48264',
-            date: '18/10/2025',
-            amount: '-$120.00',
-            type: 'Debit',
-            note: 'CREW TRANSPORT - SHARJAH TO DUBAI',
-            action: 'Completed'
-          },
-          {
-            id: 'NAVFEES58330',
-            date: '18/10/2025',
-            amount: '-$185.25',
-            type: 'Debit',
-            note: 'NAVIGATION FEES - UAE AIRSPACE',
-            action: 'Completed'
-          },
-          {
-            id: 'SUBSCRIPT39178',
-            date: '15/10/2025',
-            amount: '-$45.00',
-            type: 'Debit',
-            note: 'WEATHER SERVICE SUBSCRIPTION',
-            action: 'Completed'
-          }
+           const tableData = [
+            {
+              id: 'AUHPAY92834',
+              date: '29/10/2025',
+              amount: '+$12,750.00',
+              type: 'Credit',
+              note: 'CLIENT PAYMENT - YAS ISLAND TRANSFER',
+              action: 'Completed'
+            },
+            {
+              id: 'AUHFUEL67123',
+              date: '29/10/2025',
+              amount: '-$3,420.50',
+              type: 'Debit',
+              note: 'AVIATION FUEL ABU DHABI INTL',
+              action: 'Completed'
+            },
+            {
+              id: 'YASHANDL44921',
+              date: '29/10/2025',
+              amount: '-$1,850.00',
+              type: 'Debit',
+              note: 'HANDLING FEE AL BATEEN EXECUTIVE AIRPORT',
+              action: 'Completed'
+            },
+            {
+              id: 'FBOFEE77345',
+              date: '29/10/2025',
+              amount: '-$650.00',
+              type: 'Debit',
+              note: 'FBO SERVICES - SIGNATURE FLIGHT SUPPORT AUH',
+              action: 'Completed'
+            },
+            {
+              id: 'CREWHTL66218',
+              date: '29/10/2025',
+              amount: '-$420.00',
+              type: 'Debit',
+              note: 'HOTEL W YAS ISLAND ABU DHABI',
+              action: 'Completed'
+            },
+            {
+              id: 'VIPCATR88347',
+              date: '29/10/2025',
+              amount: '-$890.25',
+              type: 'Debit',
+              note: 'VIP CATERING - FERRARI THEME MENU',
+              action: 'Completed'
+            },
+            {
+              id: 'GROUNDTR77412',
+              date: '29/10/2025',
+              amount: '-$325.00',
+              type: 'Debit',
+              note: 'EXECUTIVE GROUND TRANSPORT YAS ISLAND',
+              action: 'Completed'
+            },
+            {
+              id: 'FUELDEP58219',
+              date: '29/10/2025',
+              amount: '-$4,200.00',
+              type: 'Debit',
+              note: 'FUEL DEPOSIT - JET A1 PREPAYMENT',
+              action: 'Completed'
+            }
         ];
         
     const tableContainer = document.getElementById('expensesTableContainer');
